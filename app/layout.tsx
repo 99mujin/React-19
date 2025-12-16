@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "@/_assets/styles/globals.css";
+import "@assets/styles/globals.css";
+import "@icon-park/react/styles/index.css";
 
 // 字体设置
 const geistSans = Geist({
@@ -28,7 +29,8 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
